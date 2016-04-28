@@ -87,8 +87,8 @@ a runtime error.
 
 ## Shutting down ProcessMonitor and external process
 
-Document waitpid behaviour (stops world)
-
+The waitpid() system call suspends execution of the calling process
+until a child specified by pid argument has changed state.
 """
 use "files"
 use @pony_os_errno[I32]()
